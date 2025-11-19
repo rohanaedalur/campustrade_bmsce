@@ -1,0 +1,287 @@
+/* Homepage Styles */
+body {
+  font-family: "Fantasy", Copperplate;
+  background-color: #E7DCCB;
+  color: #111;
+}
+
+/* Navigation */
+.navbar-brand.logo {
+  font-family: "copperplate", fantasy;
+  font-weight: 600;
+}
+
+.btn-signup {
+  background-color: #E7DCCB;
+  color: #000 !important;
+  border-radius: 20px;
+  padding: 8px 20px !important;
+  margin-left: 10px;
+}
+
+.btn-signup:hover {
+  background-color: #d4c9b8;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, #E7DCCB 0%, #d4c9b8 100%);
+  padding: 80px 0;
+}
+
+.min-vh-80 {
+  min-height: 80vh;
+}
+
+.hero-title {
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 1rem;
+  font-family: "copperplate", fantasy;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.hero-buttons .btn {
+  padding: 12px 30px;
+  font-weight: 600;
+  border-radius: 25px;
+  background-color: #000;
+}
+
+.hero-stats {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+
+.stat-number {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #000;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.hero-image {
+  text-align: center;
+}
+
+.image-placeholder {
+  background: linear-gradient(135deg, #000 0%, #333 100%);
+  border-radius: 20px;
+  padding: 60px 40px;
+  color: #E7DCCB;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.placeholder-icon {
+  font-size: 4rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.placeholder-content p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+/* Features Section */
+.features-section {
+  padding: 80px 0;
+  background-color: #fff;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 3rem;
+  font-family: "copperplate", fantasy;
+}
+
+.feature-card {
+  text-align: center;
+  padding: 2rem;
+  background: #F8F9FA;
+  border-radius: 15px;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.feature-card h4 {
+  color: #000;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.feature-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* How It Works */
+.how-it-works {
+  padding: 80px 0;
+  background-color: #E7DCCB;
+}
+
+.step-card {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #fff;
+  border-radius: 15px;
+  height: 100%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.step-number {
+  width: 50px;
+  height: 50px;
+  background: #000;
+  color: #E7DCCB;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 auto 1rem;
+}
+
+.step-card h5 {
+  color: #000;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.step-card p {
+  color: #666;
+  line-height: 1.5;
+}
+
+/* CTA Section */
+.cta-section {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #000 0%, #333 100%);
+  color: #E7DCCB;
+}
+
+.cta-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-family: "copperplate", fantasy;
+}
+
+.cta-description {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.cta-buttons .btn {
+  padding: 12px 30px;
+  font-weight: 600;
+  border-radius: 25px;
+  background-color: #fff;
+  color: #000
+}
+
+.cta-buttons .btn-outline-dark {
+  border-color: #E7DCCB;
+  background-color: #fff;
+  color: #000
+}
+
+.cta-buttons .btn-outline-dark:hover {
+  background-color: #E7DCCB;
+  color: #000;
+}
+
+/* Footer */
+.footer {
+  background-color: #111;
+  color: #E7DCCB;
+  padding: 40px 0 20px;
+}
+
+.footer h5, .footer h6 {
+  color: #E7DCCB;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.footer a {
+  color: #E7DCCB;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  padding-top: 20px;
+  color: #999;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .hero-buttons .btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-buttons .btn:last-child {
+    margin-bottom: 0;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .feature-card, .step-card {
+    margin-bottom: 1rem;
+  }
+}

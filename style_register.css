@@ -1,0 +1,162 @@
+/* Registration Page Styles */
+body {
+  background-color: #E7DCCB;
+  color: #000000;
+  font-family: "Fantasy", copperplate;
+}
+
+.register-container {
+  padding: 40px 0;
+  min-height: calc(100vh - 76px);
+  display: flex;
+  align-items: center;
+}
+
+/* Navigation */
+.navbar-brand.logo {
+  font-family: "copperplate", fantasy;
+  font-weight: 600;
+}
+
+.btn-signup {
+  background-color: #E7DCCB;
+  color: #000 !important;
+  border-radius: 20px;
+  padding: 8px 20px !important;
+  margin-left: 10px;
+}
+
+.btn-signup:hover {
+  background-color: #d4c9b8;
+}
+
+/* Register Box */
+.register-box {
+  background-color: #000000;
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.register-header h2 {
+  color: #E7DCCB;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  font-family: "copperplate", fantasy;
+}
+
+.register-header p {
+  color: #ccc;
+  margin-bottom: 0;
+}
+
+.form-label {
+  color: #E7DCCB;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.form-control, .form-select {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 14px;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: #E7DCCB;
+  box-shadow: 0 0 0 0.2rem rgba(231, 220, 203, 0.25);
+  background-color: #fff;
+}
+
+.form-text {
+  color: #999;
+  font-size: 0.85rem;
+}
+
+.form-check-label {
+  color: #E7DCCB;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.form-check-input:checked {
+  background-color: #E7DCCB;
+  border-color: #E7DCCB;
+}
+
+.text-link {
+  color: #E7DCCB;
+  text-decoration: underline;
+}
+
+.text-link:hover {
+  color: #fff;
+}
+
+.register-btn {
+  background-color: #E7DCCB;
+  color: #000;
+  border: none;
+  border-radius: 25px;
+  padding: 12px;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.register-btn:hover {
+  background-color: #d4c9b8;
+  transform: translateY(-2px);
+}
+
+/* Social Sign Up */
+.social-signup {
+  margin-top: 2rem;
+}
+
+.divider {
+  text-align: center;
+  position: relative;
+  margin: 20px 0;
+}
+
+.divider::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #333;
+}
+
+.divider span {
+  background: #000;
+  padding: 0 15px;
+  color: #999;
+  font-size: 14px;
+}
+
+.social-btn {
+  border: 1px solid #333;
+  border-radius: 25px;
+  padding: 10px;
+  color: #E7DCCB;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.social-btn:hover {
+  background-color: #333;
+  border-color: #555;
+  color: #fff;
+}
+
+.social-icon {
+  margin-right: 8px;
+}
+
+/* Links */
+.login-link 

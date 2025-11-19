@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CampusTrade - Login</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style_login.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand logo" href="index.html">CampusTrade</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index_listing.html">Browse Items</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index_post.html">Sell Item</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="index_login.html">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn-signup" href="index_register.html">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="login-container">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-5">
+          <!-- Quick Navigation -->
+          <div class="text-center mb-4">
+            <a href="index.html" class="btn btn-outline-dark btn-sm">← Back to Home</a>
+          </div>
+
+          <!-- Login Box -->
+          <div class="login-box">
+            <div class="login-header text-center mb-4">
+              <h2>Welcome Back!</h2>
+              <p class="text-light">Sign in to your CampusTrade account</p>
+            </div>
+
+            <form id="loginForm">
+              <div class="mb-3">
+                <label class="form-label">Email Address</label>
+                <input type="email" class="form-control email_bar" placeholder="Enter your college email" required>
+                <div class="form-text">Use your college email for verification</div>
+              </div>
+              
+              <div class="mb-3">
+                <label class="form-label">Password</label>
+                <input type="password" class="form-control password_bar" placeholder="Enter your password" required>
+              </div>
+
+              <div class="d-flex justify-content-between align-items-center mb-4">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="remember">
+                  <label class="form-check-label" for="remember">Remember me</label>
+                </div>
+                <button type="button" class="btn btn-link forgotbtn p-0">Forgot Password?</button>
+              </div>
+
+              <button type="submit" class="btn btn-primary w-100 login-btn">SIGN IN</button>
+
+              <!-- Social Login -->
+              <div class="social-login mt-4">
+                <div class="divider">
+                  <span>Or continue with</span>
+                </div>
+                <div class="social-buttons mt-3">
+                  <button type="button" class="btn btn-outline-light w-100 mb-2 social-btn" id="googleLogin">
+                    <span class="social-icon">🔍</span>
+                    Continue with Google
+                  </button>
+                  <button type="button" class="btn btn-outline-light w-100 social-btn" id="facebookLogin">
+                    <span class="social-icon">👤</span>
+                    Continue with Facebook
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <!-- Sign Up Link -->
+          <div class="signup-link text-center mt-4">
+            <p class="text-dark">Don't have an account? 
+              <a href="index_register.html" class="signup-link-text">Create one here</a>
+            </p>
+          </div>
+
+          <!-- Guest Access -->
+          <div class="guest-access text-center mt-3">
+            <button class="btn btn-link text-dark" id="guestAccess">
+              Continue browsing as guest
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="script_login.js"></script>
+</body>
+</html>

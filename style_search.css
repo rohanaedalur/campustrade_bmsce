@@ -1,0 +1,150 @@
+body {
+  font-family: "Fantasy", Copperplate;
+  background-color: #E7DCCB;
+  color: #111;
+}
+
+.search-results-container {
+  min-height: calc(100vh - 76px);
+}
+
+.search-header {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.search-container {
+  background-color: #d9d9d9;
+  border-radius: 20px;
+  padding: 6px 12px;
+}
+
+.search-bar {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 14px;
+}
+
+.search-bar:focus {
+  box-shadow: none;
+  background: transparent;
+}
+
+.results-count {
+  color: #666;
+  font-weight: 500;
+}
+
+.filters-sidebar {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  height: fit-content;
+  position: sticky;
+  top: 20px;
+}
+
+.filter-section {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.filter-section h6 {
+  color: #000;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.price-inputs {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.price-inputs .form-control {
+  text-align: center;
+  padding: 0.375rem;
+}
+
+.filter-options .form-check {
+  margin-bottom: 0.5rem;
+}
+
+.filter-options .form-check-label {
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.sort-options {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sort-label {
+  color: #666;
+  font-weight: 500;
+}
+
+.card {
+  background-color: #111;
+  border-radius: 8px;
+  overflow: hidden;
+  color: #fff;
+  border: none;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.image-box {
+  background-color: #EDEDED;
+  height: 180px;
+}
+
+.card-title {
+  margin: 0;
+  font-size: 14px;
+  color: white;
+}
+
+.card-price {
+  color: #f7e7a8;
+  font-weight: bold;
+  margin: 4px 0;
+}
+
+.card-text {
+  font-size: 12px;
+  color: #999;
+}
+
+.item-meta {
+  margin-top: 0.5rem;
+}
+
+.pagination {
+  margin: 40px 0;
+}
+
+.page-link {
+  color: #000000;
+  border: none;
+  background: transparent;
+}
+
+.page-link.active {
+  background: #a1a1a1;
+  border-color: #a1a1a1;
+}
+
+.page-btn {
+  color: #555;
+}

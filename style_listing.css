@@ -1,0 +1,120 @@
+body {
+  font-family: "Fantasy", Copperplate;
+  background-color: #E7DCCB;
+  color: #111;
+}
+
+.logo {
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  font-family: "copperplate", fantasy;
+}
+
+.search-container {
+  background-color: #d9d9d9;
+  border-radius: 20px;
+  padding: 6px 12px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.search-bar {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 14px;
+  text-align: center;
+}
+
+.search-bar:focus {
+  box-shadow: none;
+  background: transparent;
+}
+
+.close-btn {
+  cursor: pointer;
+  font-size: 18px;
+  color: #6b6b6b;
+  background: transparent;
+  border: none;
+}
+
+.card {
+  background-color: #111;
+  border-radius: 8px;
+  overflow: hidden;
+  color: #fff;
+  transition: transform 0.2s ease;
+  border: none;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.image-box {
+  background-color: #EDEDED;
+  height: 180px;
+}
+
+.card-title {
+  margin: 0;
+  font-size: 14px;
+  color: white;
+}
+
+.card-price {
+  color: #f7e7a8;
+  font-weight: bold;
+  margin: 4px 0;
+}
+
+.card-text {
+  font-size: 12px;
+  color: #999;
+}
+
+.pagination {
+  margin: 40px 0;
+}
+
+.page-link {
+  color: #000000;
+  border: none;
+  background: transparent;
+}
+
+.page-link.active {
+  background: #a1a1a1;
+  border-color: #a1a1a1;
+}
+
+.page-btn {
+  color: #555;
+}
+
+.dots {
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .search-container {
+    max-width: 100%;
+  }
+  
+  .card-grid {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 0 15px;
+  }
+  
+  .pagination {
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,130 @@
+.post-container {
+  font-family: "Fantasy", Copperplate;
+  background-color: #E7DCCB;
+  min-height: 100vh;
+}
+
+.logo {
+  font-weight: 400;
+  font-size: 24px;
+  color: #000000;
+  font-family: "copperplate", fantasy;
+}
+
+.post-form-container {
+  background-color: #000000;
+  border-radius: 12px;
+  padding: 30px;
+  color: #E7DCCB;
+  margin-bottom: 30px;
+}
+
+.post-title {
+  font-size: 24px;
+  color: #E7DCCB;
+  font-weight: 500;
+}
+
+.form-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #E7DCCB;
+}
+
+.form-control,
+.form-select {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  font-size: 14px;
+  padding: 12px;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #ccc;
+  box-shadow: none;
+  background-color: #fff;
+}
+
+/* Image Upload */
+.image-upload-box {
+  border: 2px dashed #E7DCCB;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.image-upload-box:hover {
+  border-color: #fff;
+}
+
+.upload-placeholder span {
+  color: #E7DCCB;
+}
+
+.upload-placeholder p {
+  color: #E7DCCB;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Condition Options */
+.condition-options .form-check-label {
+  color: #E7DCCB;
+  font-size: 14px;
+}
+
+.form-check-input:checked {
+  background-color: #E7DCCB;
+  border-color: #E7DCCB;
+}
+
+/* Post Button */
+.post-button {
+  background-color: #E7DCCB;
+  color: #000000;
+  border: none;
+  border-radius: 8px;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.post-button:hover {
+  background-color: #d4c9b8;
+  color: #000000;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .post-form-container {
+    padding: 20px;
+  }
+  
+  .condition-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .form-check-inline {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .post-form-container {
+    padding: 15px;
+    margin: 0 10px;
+  }
+  
+  .logo {
+    font-size: 20px;
+  }
+  
+  .post-title {
+    font-size: 20px;
+  }
+}
