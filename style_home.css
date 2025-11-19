@@ -1,26 +1,39 @@
 /* Homepage Styles */
 body {
-  font-family: "Fantasy", Copperplate;
+  font-family: "Inter", sans-serif;
   background-color: #E7DCCB;
   color: #111;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+  font-family: "Copperplate", fantasy;
 }
 
 /* Navigation */
+.navbar {
+  padding: 1rem 0;
+}
+
 .navbar-brand.logo {
-  font-family: "copperplate", fantasy;
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 1.8rem;
 }
 
 .btn-signup {
   background-color: #E7DCCB;
   color: #000 !important;
   border-radius: 20px;
-  padding: 8px 20px !important;
+  padding: 10px 24px !important;
   margin-left: 10px;
+  font-weight: 600;
+  transition: all 0.3s ease;
 }
 
 .btn-signup:hover {
   background-color: #d4c9b8;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 /* Hero Section */
@@ -34,11 +47,10 @@ body {
 }
 
 .hero-title {
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   font-weight: 700;
   color: #000;
   margin-bottom: 1rem;
-  font-family: "copperplate", fantasy;
 }
 
 .hero-subtitle {
@@ -59,7 +71,38 @@ body {
   padding: 12px 30px;
   font-weight: 600;
   border-radius: 25px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-buttons .btn-primary {
   background-color: #000;
+  border-color: #000;
+}
+
+.hero-buttons .btn-primary:hover {
+  background-color: #333;
+  border-color: #333;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.hero-buttons .btn-primary:active {
+  transform: translateY(-1px);
+}
+
+.hero-buttons .btn-outline-light {
+  color: #000;
+  border-color: #000;
+  background-color: transparent;
+}
+
+.hero-buttons .btn-outline-light:hover {
+  background-color: #000;
+  color: #E7DCCB;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
 .hero-stats {
@@ -117,25 +160,26 @@ body {
   font-weight: 700;
   color: #000;
   margin-bottom: 3rem;
-  font-family: "copperplate", fantasy;
 }
 
 .feature-card {
   text-align: center;
-  padding: 2rem;
-  background: #F8F9FA;
+  padding: 2.5rem 1.5rem;
+  background: #F5F1EA;
   border-radius: 15px;
   height: 100%;
   transition: transform 0.3s ease;
+  border: 1px solid #E7DCCB;
 }
 
 .feature-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
 }
 
 .feature-icon {
   font-size: 3rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .feature-card h4 {
@@ -145,8 +189,9 @@ body {
 }
 
 .feature-card p {
-  color: #666;
+  color: #555;
   line-height: 1.6;
+  font-size: 1rem;
 }
 
 /* How It Works */
@@ -157,16 +202,21 @@ body {
 
 .step-card {
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 2.5rem 1.5rem;
   background: #fff;
   border-radius: 15px;
   height: 100%;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.step-card:hover {
+  transform: translateY(-5px);
 }
 
 .step-number {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   background: #000;
   color: #E7DCCB;
   border-radius: 50%;
@@ -175,7 +225,7 @@ body {
   justify-content: center;
   font-size: 1.5rem;
   font-weight: 700;
-  margin: 0 auto 1rem;
+  margin: 0 auto 1.5rem;
 }
 
 .step-card h5 {
@@ -200,7 +250,6 @@ body {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  font-family: "copperplate", fantasy;
 }
 
 .cta-description {
@@ -213,19 +262,35 @@ body {
   padding: 12px 30px;
   font-weight: 600;
   border-radius: 25px;
-  background-color: #fff;
-  color: #000
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-buttons .btn-primary {
+  background-color: #E7DCCB;
+  color: #000;
+  border-color: #E7DCCB;
+}
+
+.cta-buttons .btn-primary:hover {
+  background-color: #d4c9b8;
+  border-color: #d4c9b8;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(231, 220, 203, 0.3);
 }
 
 .cta-buttons .btn-outline-dark {
   border-color: #E7DCCB;
-  background-color: #fff;
-  color: #000
+  background-color: transparent;
+  color: #E7DCCB;
 }
 
 .cta-buttons .btn-outline-dark:hover {
   background-color: #E7DCCB;
   color: #000;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(231, 220, 203, 0.3);
 }
 
 /* Footer */
@@ -257,6 +322,56 @@ body {
   color: #999;
 }
 
+/* Button Animation Effects */
+.btn {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255,255,255,0.1);
+  z-index: -2;
+}
+
+.btn:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.1);
+  transition: all 0.3s;
+  z-index: -1;
+}
+
+.btn:hover:before {
+  width: 100%;
+}
+
+/* Ripple Effect */
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.7);
+  transform: scale(0);
+  animation: ripple-animation 0.6s linear;
+}
+
+@keyframes ripple-animation {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .hero-title {
@@ -282,6 +397,10 @@ body {
   }
   
   .feature-card, .step-card {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .navbar-brand.logo {
+    font-size: 1.5rem;
   }
 }
