@@ -6,8 +6,401 @@
   <title>CampusTrade - College Marketplace</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Copperplate:wght@300;400;500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="style_home.css">
+  <style>
+    /* Homepage Styles */
+    body {
+      font-family: "Inter", sans-serif;
+      background-color: #E7DCCB;
+      color: #111;
+      line-height: 1.6;
+    }
+
+    h1, h2, h3, h4, h5, h6, .navbar-brand {
+      font-family: "Copperplate", fantasy;
+    }
+
+    /* Navigation */
+    .navbar {
+      padding: 1rem 0;
+    }
+
+    .navbar-brand.logo {
+      font-weight: 700;
+      font-size: 1.8rem;
+    }
+
+    .btn-signup {
+      background-color: #E7DCCB;
+      color: #000 !important;
+      border-radius: 20px;
+      padding: 10px 24px !important;
+      margin-left: 10px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .btn-signup:hover {
+      background-color: #d4c9b8;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    /* Hero Section */
+    .hero-section {
+      background: linear-gradient(135deg, #E7DCCB 0%, #d4c9b8 100%);
+      padding: 80px 0;
+    }
+
+    .min-vh-80 {
+      min-height: 80vh;
+    }
+
+    .hero-title {
+      font-size: 3.5rem;
+      font-weight: 700;
+      color: #000;
+      margin-bottom: 1rem;
+    }
+
+    .hero-subtitle {
+      font-size: 1.5rem;
+      color: #333;
+      margin-bottom: 1.5rem;
+      font-weight: 500;
+    }
+
+    .hero-description {
+      font-size: 1.1rem;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+
+    .hero-buttons .btn {
+      padding: 12px 30px;
+      font-weight: 600;
+      border-radius: 25px;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-buttons .btn-primary {
+      background-color: #000;
+      border-color: #000;
+    }
+
+    .hero-buttons .btn-primary:hover {
+      background-color: #333;
+      border-color: #333;
+      transform: translateY(-3px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+
+    .hero-buttons .btn-primary:active {
+      transform: translateY(-1px);
+    }
+
+    .hero-buttons .btn-outline-light {
+      color: #000;
+      border-color: #000;
+      background-color: transparent;
+    }
+
+    .hero-buttons .btn-outline-light:hover {
+      background-color: #000;
+      color: #E7DCCB;
+      transform: translateY(-3px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+
+    .hero-stats {
+      background: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+    }
+
+    .stat-number {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #000;
+    }
+
+    .stat-label {
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    .hero-image {
+      text-align: center;
+    }
+
+    .image-placeholder {
+      background: linear-gradient(135deg, #000 0%, #333 100%);
+      border-radius: 20px;
+      padding: 60px 40px;
+      color: #E7DCCB;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .placeholder-icon {
+      font-size: 4rem;
+      display: block;
+      margin-bottom: 1rem;
+    }
+
+    .placeholder-content p {
+      font-size: 1.2rem;
+      margin: 0;
+    }
+
+    /* Features Section */
+    .features-section {
+      padding: 80px 0;
+      background-color: #fff;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #000;
+      margin-bottom: 3rem;
+    }
+
+    .feature-card {
+      text-align: center;
+      padding: 2.5rem 1.5rem;
+      background: #F5F1EA;
+      border-radius: 15px;
+      height: 100%;
+      transition: transform 0.3s ease;
+      border: 1px solid #E7DCCB;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    }
+
+    .feature-icon {
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .feature-card h4 {
+      color: #000;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+
+    .feature-card p {
+      color: #555;
+      line-height: 1.6;
+      font-size: 1rem;
+    }
+
+    /* How It Works */
+    .how-it-works {
+      padding: 80px 0;
+      background-color: #E7DCCB;
+    }
+
+    .step-card {
+      text-align: center;
+      padding: 2.5rem 1.5rem;
+      background: #fff;
+      border-radius: 15px;
+      height: 100%;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease;
+    }
+
+    .step-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .step-number {
+      width: 60px;
+      height: 60px;
+      background: #000;
+      color: #E7DCCB;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin: 0 auto 1.5rem;
+    }
+
+    .step-card h5 {
+      color: #000;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+
+    .step-card p {
+      color: #666;
+      line-height: 1.5;
+    }
+
+    /* CTA Section */
+    .cta-section {
+      padding: 80px 0;
+      background: linear-gradient(135deg, #000 0%, #333 100%);
+      color: #E7DCCB;
+    }
+
+    .cta-section h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .cta-description {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      opacity: 0.9;
+    }
+
+    .cta-buttons .btn {
+      padding: 12px 30px;
+      font-weight: 600;
+      border-radius: 25px;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-buttons .btn-primary {
+      background-color: #E7DCCB;
+      color: #000;
+      border-color: #E7DCCB;
+    }
+
+    .cta-buttons .btn-primary:hover {
+      background-color: #d4c9b8;
+      border-color: #d4c9b8;
+      transform: translateY(-3px);
+      box-shadow: 0 6px 12px rgba(231, 220, 203, 0.3);
+    }
+
+    .cta-buttons .btn-outline-dark {
+      border-color: #E7DCCB;
+      background-color: transparent;
+      color: #E7DCCB;
+    }
+
+    .cta-buttons .btn-outline-dark:hover {
+      background-color: #E7DCCB;
+      color: #000;
+      transform: translateY(-3px);
+      box-shadow: 0 6px 12px rgba(231, 220, 203, 0.3);
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #111;
+      color: #E7DCCB;
+      padding: 40px 0 20px;
+    }
+
+    .footer h5, .footer h6 {
+      color: #E7DCCB;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+
+    .footer a {
+      color: #E7DCCB;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .footer a:hover {
+      color: #fff;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #333;
+      padding-top: 20px;
+      color: #999;
+    }
+
+    /* Button Animation Effects */
+    .btn {
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    .btn:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255,255,255,0.1);
+      z-index: -2;
+    }
+
+    .btn:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.1);
+      transition: all 0.3s;
+      z-index: -1;
+    }
+
+    .btn:hover:before {
+      width: 100%;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero-title {
+        font-size: 2.5rem;
+      }
+      
+      .hero-subtitle {
+        font-size: 1.2rem;
+      }
+      
+      .hero-buttons .btn {
+        display: block;
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+      
+      .hero-buttons .btn:last-child {
+        margin-bottom: 0;
+      }
+      
+      .section-title {
+        font-size: 2rem;
+      }
+      
+      .feature-card, .step-card {
+        margin-bottom: 1.5rem;
+      }
+      
+      .navbar-brand.logo {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
 </head>
 <body>
   <!-- Navigation Bar -->
@@ -53,7 +446,7 @@
             trusted, campus-only environment.
           </p>
           <div class="hero-buttons">
-            <a href="index_register.html" class="btn btn-primary btn-lg me-3">Get Started Free</a>
+            <a href="index_register.html" class="btn btn-primary btn-lg me-3">Get Started for Free</a>
             <a href="index_listing.html" class="btn btn-outline-light btn-lg">Browse Items</a>
           </div>
           <div class="hero-stats mt-4">
@@ -200,6 +593,34 @@
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Custom JS -->
-  <script src="script_home.js"></script>
+  <script>
+    // Add click animation to buttons
+    document.addEventListener('DOMContentLoaded', function() {
+      const buttons = document.querySelectorAll('.btn');
+      
+      buttons.forEach(button => {
+        button.addEventListener('click', function(e) {
+          // Create ripple effect
+          const ripple = document.createElement('span');
+          const rect = this.getBoundingClientRect();
+          const size = Math.max(rect.width, rect.height);
+          const x = e.clientX - rect.left - size / 2;
+          const y = e.clientY - rect.top - size / 2;
+          
+          ripple.style.width = ripple.style.height = size + 'px';
+          ripple.style.left = x + 'px';
+          ripple.style.top = y + 'px';
+          ripple.classList.add('ripple');
+          
+          this.appendChild(ripple);
+          
+          // Remove ripple after animation
+          setTimeout(() => {
+            ripple.remove();
+          }, 600);
+        });
+      });
+    });
+  </script>
 </body>
 </html>
